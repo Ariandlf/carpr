@@ -720,6 +720,7 @@ body {
     color: #999;
     font-size: 1.5rem;
     line-height: 1.5;
+    margin-bottom: 2rem;
 
 }
 
@@ -752,10 +753,12 @@ body {
     position: absolute;
     bottom: 3rem; right: 3rem;
     font-size: 6rem;
+    padding-top: 2rem;
+    margin-top: 3rem;
 }
 
 .quote img {
-    color: #999;
+    color: #807f7f;
 }
 
 @media screen and (max-width:768px) {
@@ -836,9 +839,12 @@ body {
     .contact .row {
         flex-direction: column-reverse;
         justify-content: center;
+        margin: 0 auto;
+
 
         #animContainer {
             width: 50%;
+
         }
     }
     .contact .row form {
@@ -847,19 +853,20 @@ body {
 
 }
 
-@media screen and (max-width:1452px) {
+@media screen and (min-width:768px) and (max-width:1452px) {
     .contact .row {
         flex-direction: column-reverse;
         justify-content: center;
-
-        #animContainer {
-            width: 80%;
-        }
+        align-items: center;
     }
-    .contact .row form {
-        width: 80%;
+    
+    .contact .row form  {
+        width: 85%;
     }
 
+    #animContainer {
+        width: 85%;     
+    }
 }
 
 /* footer starts  */
